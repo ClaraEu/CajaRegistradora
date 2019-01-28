@@ -1,0 +1,11 @@
+<div class="row border">
+  <div class="col-6 border border-light">
+    <app-productos titulo="Comida" [arrProducto]="arrComida" (listaProductos)="handleProductoReci($event)"></app-productos>
+    <app-productos titulo="Bebida" [arrProducto]="arrBebida" (listaProductos)="handleProductoReci($event)"></app-productos>
+  </div>
+
+  <div class="col-6 border border-light">
+    <app-lista [listaCompra]="arrListaCompra"></app-lista>
+  </div>
+
+</div>

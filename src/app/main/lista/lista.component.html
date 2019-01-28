@@ -1,0 +1,20 @@
+<div class="container-fluid bg-dark text-light">
+  <h3 class="">Lista</h3>
+</div>
+
+<div class="" *ngFor="let pr of listaCompra; let i = index">
+  <ul>
+    <li>
+      <h6>{{pr.nombre}}</h6>
+      <p>{{pr.precio}} €</p>
+      <button type="button" name="button" (click)="handleClickBorrar(i)">BORRAR</button>
+    </li>
+  </ul>
+</div>
+
+<div class="container-fluid bg-dark text-light">
+  <div class="row">
+    <h5 class="col-8">TOTAL</h5>
+    <h6 class="col-4"> {{sumarPrecios()}} €</h6>
+  </div>
+</div>
